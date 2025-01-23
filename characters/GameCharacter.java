@@ -1,17 +1,30 @@
 package characters;
 
+import items.Inventory;
+import items.Item;
+
 public abstract class GameCharacter {
     protected String name;
     protected int health;
     protected int attackPower;
+    private Inventory inventory;
 
     public GameCharacter(String name, int health, int attackPower) {
         this.name = name;
         this.health = health;
         this.attackPower = attackPower;
+        this.inventory = new Inventory();
     }
 
     public abstract void attack(GameCharacter target);
+    
+    public void addItem(Item item){
+        inventory.addItem(item);
+    }
+
+    public void takeInventory(Inventory inv){
+        inventory.addAllItems(inv);
+    }
 
     public void takeDamage(int damage) {
         health -= damage;
