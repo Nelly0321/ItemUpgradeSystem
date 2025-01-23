@@ -1,7 +1,7 @@
 package upgrades;
 
-import items.Item;
+import items.*;
 
 public interface UpgradeStrategy {
-    void upgrade(Item item);
+    void upgrade(Inventory inventory, Item targetItem);
 }
