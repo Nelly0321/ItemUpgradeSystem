@@ -14,6 +14,7 @@ public class Game {
         GameCharacter mage = new Mage("Gandalf", 150, 70, 100);     // Example values
 
         // Create inventory
+<<<<<<< HEAD
         Inventory inventoryForWarrior = new Inventory();
         inventoryForWarrior.addItem(ItemFactory.createItem("weapon", "Sword of Destiny", Rarity.LEGENDARY));
         inventoryForWarrior.addItem(ItemFactory.createItem("potion", "Healing Potion", Rarity.COMMON));

@@ -39,13 +39,13 @@ public class Inventory {
     // Remove a single item from the inventory
     public void removeItem(Item item) {
         if (rarityMap.get(item.getRarity()).remove(item)) {
+
             System.out.println(item.getName() + " removed from inventory.");
         } else {
             System.out.println(item.getName() + " not found in inventory.");
         }
     }
 
-    // Display all items in the inventory
     public void displayInventory() {
         boolean isEmpty = true;
         System.out.println("Inventory:");
@@ -87,4 +87,3 @@ public class Inventory {
         return allItems;
     }
 }
-

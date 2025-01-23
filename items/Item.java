@@ -20,6 +20,7 @@ public abstract class Item {
     public Rarity getRarity() {
         return rarity;
     }
+<<<<<<< HEAD
 
     public ItemType getType() {
         return type;
@@ -33,5 +34,12 @@ public abstract class Item {
     public String toString() {
         return name + " (" + type + ", " + rarity + ")";
     }
+=======
+   
+    public void setRarity(Rarity rarity) {
+        this.rarity = rarity;
+    }
+    
+>>>>>>> origin/main
     public abstract void use();
 }

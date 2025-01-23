@@ -3,7 +3,6 @@ package items;
 import upgrades.Rarity;
 
 public class ItemFactory {
-
     public static Item createItem(String type, String name, Rarity rarity) {
         switch (type.toLowerCase()) {
             case "weapon":

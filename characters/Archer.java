@@ -14,6 +14,7 @@ public class Archer extends GameCharacter {
     public void attack(GameCharacter target) {
         System.out.println(this.name + " attacks " + target.getName() + " with a bow!");
     }
+
     public void addItem(Item item){
         super.addItem(item);
     }
@@ -21,6 +22,7 @@ public class Archer extends GameCharacter {
     public void takeInventory(Inventory inv){
         super.takeInventory(inv);
     }
+    
     public int getRange() {
         return range;
     }

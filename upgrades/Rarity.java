@@ -1,5 +1,6 @@
 package upgrades;
 
+<<<<<<< HEAD
 import items.*;
 
 import java.util.List;

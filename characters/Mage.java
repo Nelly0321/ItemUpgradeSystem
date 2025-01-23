@@ -1,8 +1,11 @@
 package characters;
 
+<<<<<<< HEAD
 import items.Inventory;
 import items.Item;
 
+=======
+>>>>>>> origin/main
 public class Mage extends GameCharacter {
     private int mana;
 
@@ -21,6 +24,7 @@ public class Mage extends GameCharacter {
             System.out.println(name + " doesn't have enough mana to attack.");
         }
     }
+
     public void addItem(Item item){
         super.addItem(item);
     }

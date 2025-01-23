@@ -1,18 +1,23 @@
 package characters;
 
+<<<<<<< HEAD
 import items.Inventory;
 import items.Item;
 
+=======
+>>>>>>> origin/main
 public abstract class GameCharacter {
     protected String name;
     protected int health;
     protected int attackPower;
+
     private Inventory inventory;
 
     public GameCharacter(String name, int health, int attackPower) {
         this.name = name;
         this.health = health;
         this.attackPower = attackPower;
+
         this.inventory = new Inventory();
     }
 
