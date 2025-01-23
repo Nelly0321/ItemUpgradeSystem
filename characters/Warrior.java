@@ -1,5 +1,8 @@
 package characters;
 
+import items.Inventory;
+import items.Item;
+
 public class Warrior extends GameCharacter {
     private int shield;
 
@@ -12,6 +15,14 @@ public class Warrior extends GameCharacter {
     public void attack(GameCharacter target) {
         target.takeDamage(attackPower + 5); // Extra damage due to strength
         System.out.println(name + " attacks " + target.getName());
+    }
+   
+    public void addItem(Item item){
+        super.addItem(item);
+    }
+
+    public void takeInventory(Inventory inv){
+        super.takeInventory(inv);
     }
 
     public int getShield() {
